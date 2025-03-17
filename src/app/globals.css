@@ -10,4 +10,6 @@ html {
     direction: rtl;
     text-align: right;
     font-family: 'Tajawal', sans-serif;
+    scroll-behavior: smooth;
+
 }

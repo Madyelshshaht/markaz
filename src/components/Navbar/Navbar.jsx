@@ -18,12 +18,7 @@ const Navbar = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    const handleScroll = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-        }
-    };
+
 
     return (
         <nav className="sticky top-0 z-10 w-full px-4 lg:px-5 lg:py-2">
@@ -32,10 +27,10 @@ const Navbar = () => {
                     <img src="/assets/Logo/logo.png" alt="logo" className='md:w-18 w-14' />
                 </Link>
                 <div className="hidden lg:flex gap-10 text-2xl ">
-                    <a  onClick={() => handleScroll("home")} className="text-blue-gray-900 hover:text-blue-500 font-bold">الرئيسية</a>
-                    <a  onClick={() => handleScroll("knows")} className="text-blue-gray-900 hover:text-blue-500 font-bold">تعرف علينا</a>
-                    <a  onClick={() => handleScroll("aims")} className="text-blue-gray-900 hover:text-blue-500 font-bold">أهدافنا</a>
-                    <a  onClick={() => handleScroll("courses")} className="text-blue-gray-900 hover:text-blue-500 font-bold">الدورات التدربية</a>
+                    <a  href="#home" className="text-blue-gray-900 hover:text-blue-500 font-bold">الرئيسية</a>
+                    <a  href="#knows" className="text-blue-gray-900 hover:text-blue-500 font-bold">تعرف علينا</a>
+                    <a  href="#aims" className="text-blue-gray-900 hover:text-blue-500 font-bold">أهدافنا</a>
+                    <a  href="#courses" className="text-blue-gray-900 hover:text-blue-500 font-bold">الدورات التدربية</a>
                 </div>
                 <button className="hidden rounded-3xl lg:block border-1 text-blue-700 border-blue-500 hover:text-white px-4 py-[5]  hover:bg-blue-600 transition font-bold">
                     تواصل معانا
