@@ -42,10 +42,10 @@ const Navbar = () => {
             {/* Mobile */}
             {open && (
                 <div className="lg:hidden flex flex-col  gap-4 p-4 bg-gray-100 mt-2 shadow-md rounded-md">
-                    <Link href="/pages" className="text-blue-gray-900 hover:text-blue-500 font-bold">الرئيسية</Link>
-                    <Link href="/account" className="text-blue-gray-900 hover:text-blue-500 font-bold">تعرف علينا</Link>
-                    <Link href="/blocks" className="text-blue-gray-900 hover:text-blue-500 font-bold">أهدافنا</Link>
-                    <Link href="/docs" className="text-blue-gray-900 hover:text-blue-500 font-bold">الدورات التدربية</Link>
+                    <Link href="#home" className="text-blue-gray-900 hover:text-blue-500 font-bold">الرئيسية</Link>
+                    <Link href="#knows" className="text-blue-gray-900 hover:text-blue-500 font-bold">تعرف علينا</Link>
+                    <Link href="#aims" className="text-blue-gray-900 hover:text-blue-500 font-bold">أهدافنا</Link>
+                    <Link href="#courses" className="text-blue-gray-900 hover:text-blue-500 font-bold">الدورات التدربية</Link>
                     <button className="border-1 text-blue-700 border-blue-500 hover:text-white px-4 py-2 rounded-3xl hover:bg-blue-600 transition font-bold">
                         تواصل معانا
                     </button>
